@@ -1,0 +1,39 @@
+{
+  "name": "yl-vconsole-plugin",
+  "version": "1.0.0",
+  "description": "一个vconsole插件",
+  "main": "dist/yl-vconsole-plugin.min.js",
+  "scripts": {
+    "dist": "export NODE_ENV=production && ./node_modules/.bin/webpack --mode production --progress",
+    "vconsole": "cp node_modules/vconsole/dist/vconsole.min.js example/lib/vconsole.min.js"
+  },
+  "keywords": [
+    "console",
+    "vConsole",
+    "debug",
+    "env"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "@babel/preset-env": "^7.7.6",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-add-module-exports": "^0.1.4",
+    "css-loader": "^3.3.0",
+    "html-loader": "^0.4.3",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "style-loader": "^0.13.1",
+    "vconsole": "^3.3.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.11"
+  },
+  "author": "wangeastsea@icloud.com",
+  "license": "ISC"
+}
