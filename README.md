@@ -21,3 +21,6 @@ import VConsoleYlPlugin from 'yl-vconsole-plugin';
 const vConsole = new VConsole();
 const plugin = new VConsoleYlPlugin(vConsole);
 ```
+
+## 必看
+老项目不支持vConsole.VConsolePlugin方法,故如果报错，请升级vConsole

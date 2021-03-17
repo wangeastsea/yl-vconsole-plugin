@@ -4226,7 +4226,7 @@ v8-compile-cache@^2.1.1:
   resolved "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==
 
-vconsole@^3.3.4:
+vconsole@^3.4.0:
   version "3.4.0"
   resolved "https://registry.npmjs.org/vconsole/-/vconsole-3.4.0.tgz#2cf2ffaa86cd7ab736997a22b63d05627c6ab567"
   integrity sha512-N9py7Ch9M9nzsigYf8T/WHIOood7jq2MNtUWDqicnrCsPsOZj8Z3NsmFgBmDA3bPKwnzace11HXHxYKPfwV32A==
