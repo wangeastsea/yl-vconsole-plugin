@@ -17,7 +17,7 @@ yarn add yl-vconsole-plugin
 
 ```js
 import VConsole from 'vconsole';
-import VConsoleStatsPlugin from 'vconsole-stats-plugin';
+import VConsoleYlPlugin from 'yl-vconsole-plugin';
 const vConsole = new VConsole();
-const plugin = new VConsoleStatsPlugin(vConsole);
+const plugin = new VConsoleYlPlugin(vConsole);
 ```
