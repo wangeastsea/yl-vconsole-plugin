@@ -22,5 +22,31 @@ const vConsole = new VConsole();
 const plugin = new VConsoleYlPlugin(vConsole);
 ```
 
-## 必看
-老项目不支持vConsole.VConsolePlugin方法,故如果报错，请升级vConsole
+## 项目里的使用方法：
+```js
+import domain from '@/utils/DOMAIN'
+
+// jsBridge插件
+export default {
+    async install(Vue, { use_console = true } = { use_console: true }) {
+        // 异步导入控制台
+        if (
+            use_console &&
+            !domain.IS_PRO &&
+            !domain.IS_PRO_HK &&
+            !domain.IS_USMART
+        ) {
+            const { default: VConsole } = await import(
+                /*webpackChunkName: "VConsole"*/ 'vconsole'
+            )
+            const { default: VConsoleYlPlugin } = await import(
+                /*webpackChunkName: "yl-vconsole-plugin"*/ 'yl-vconsole-plugin'
+            )
+            const vconsole = new VConsole()
+            window.VConsole = VConsole
+            new VConsoleYlPlugin(vconsole)
+        }
+    }
+}
+
+```
