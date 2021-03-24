@@ -6,7 +6,7 @@
 
 // import './style.less';
 const getStorageBykey =  function (key, type) {
-    return window.localStorage.getItem(`${key}`) && window.localStorage.getItem('userToken').replace(`${type}@`, '') 
+    return window.localStorage.getItem(`${key}`) && window.localStorage.getItem(`${key}`).replace(`${type}@`, '') 
 }
 class VConsoleYlPlugin {
     constructor(vConsole) {
@@ -37,9 +37,12 @@ class VConsoleYlPlugin {
         })
 
         switchEnv.on('showConsole', function() {
+            let userId = getStorageBykey('userId' , 'number')
             // do something
             document.querySelector('#url').textContent =
                 window.location.href
+
+            document.querySelector('#userId').textContent = userId
         })
         // 顶部的bar
         switchEnv.on('addTopBar', function(callback) {
